@@ -32,7 +32,7 @@ h1{
     font-weight: lighter;
     margin-bottom: 0px;
 }
-h3{
+h2{
     
     font-family: 'Mohave', sans-serif;
     font-size: 14px;
@@ -73,13 +73,14 @@ h3{
     padding-left: 10px;
     width: 100%;
     height: 30px;
-    float: left;
-    font-size: 20px;
+    font-size: 14px;
 }
 #details{
     width: 100%;
     height: 100px;
-    padding: 0 0 0 0;
+    padding-left: 10px;
+    font-size: 14px;
+    resize: none;   
 }
 button.addBtn{
     margin-top: 5px;
@@ -90,8 +91,7 @@ button.addBtn{
     border-radius: 5px;
     width: 30%;
     height: 30px;
-    float:left;
-    font-size: 20px;
+    font-size: 14px;
 }
 button.addBtn:hover {
     background-color: #9e8f09;
@@ -99,46 +99,19 @@ button.addBtn:hover {
 .list{
     color:#02879e;
     width: 300px;
-    overflow: hidden;
-    
+    overflow: hidden;    
 }
 li{
     padding: 5px 5px 5px 10px;   
 }
-/*lists menu*/
-ul.nav{
-    background-color: rgba(150, 150, 150, 0.8);
-    width: 50px;
-    height: 300px;
-    position: fixed;
-    right: 0px;
-    top: 150px;
-    margin-right: 0px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    
-}
-/* lists*/
-a {
-    padding-top: 5px;
-    margin: 0px;
-    border-top-left-radius: 20px;
-    
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Mohave', sans-serif;
-}
-
-a:active{
-    background-color: #02879e;
-    height: 100%;
-}
 .newTodo{
     width: 90%;
 }
+.newDetail{
+    display: none;
+}
 .fBtn{
-    /*background-color: #289a67;*/
+    background-color: #289a67;
     width: 15px;
     height: 15px;
     border: 2px solid #289a67;
@@ -146,10 +119,9 @@ a:active{
     margin-right: 0px;
     position: absolute;
     right: 75px;
-    
-    
-    
-
+}
+button.fBtn:hover{
+    background-color: rgb(76, 235, 206);
 }
 button.dBtn{
     background-color: rgb(242, 92, 92);
@@ -163,8 +135,7 @@ button.dBtn{
 
 }
 button.dBtn:hover{
-    width: 30px;
-    height: 30px;
+    background-color: rgb(242, 223, 100);
 }
 
 
@@ -173,4 +144,3 @@ eb3184
 1acbeb
 ebd202
 9e8f09*/
-

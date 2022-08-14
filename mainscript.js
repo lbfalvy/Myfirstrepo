@@ -1,5 +1,17 @@
 document.onload = createListBtn();
 
+//current date:
+const y = new Date();
+document.getElementById("year").innerHTML = y.getFullYear();
+
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const m = new Date();
+let month = months[m.getMonth()];
+document.getElementById("month").innerHTML = month;
+
+const d = new Date();
+document.getElementById("day").innerHTML = d.getDate();
+
 //creating buttons on list items
 
 function createListBtn(){
@@ -26,12 +38,17 @@ function createListBtn(){
 
 
 let x = "";
+let z = "";
 function addTodo(){
     x = document.getElementById("myInput").value;
+    z = document.getElementById("details").value;
    let newLi = document.createElement("li");
    let newTodo = document.createTextNode(x);
+   let newDetail = document.createTextNode(z);
    newTodo.classname = "newTodo";
+   newDetail.classname = "newDetail";
    newLi.appendChild(newTodo);
+   newLi.appendChild(newDetail);
    todoList.appendChild(newLi);
    createListBtn();
   
